@@ -16,11 +16,14 @@ Ce guide décrit la procédure pour installer Arch Linux officiellement sous WSL
 
 1. Ouvrir PowerShell en mode administrateur.
 2. Exécuter la commande suivante pour installer Arch Linux :
-   ```
+
+   ```bash
    wsl --install archlinux
    ```
+
 3. Lancer Arch Linux via :
-   ```
+
+   ```bash
    wsl -d ArchLinux
    ```
 
@@ -29,6 +32,7 @@ Ce guide décrit la procédure pour installer Arch Linux officiellement sous WSL
 ## Étape 2 : Script d’installation et configuration
 
 Vous devez exécuter un script bash qui :
+
 - Crée un utilisateur normal avec droits sudo
 - Met à jour le système
 - Installe yay (gestionnaire de paquets AUR)
@@ -41,17 +45,22 @@ Vous devez exécuter un script bash qui :
 
 1. Sauvegardez le script complet (fournis dans le dossier `scripts/install-arch-omarchy.sh`) sur votre machine WSL dans Arch Linux.
 2. Exécutez-le en root ou avec sudo :
-   ```
+
+   ```bash
    sudo bash install-arch-omarchy.sh
    ```
+
 3. Suivez les instructions à l’écran.
 4. Une fois terminé, redémarrez WSL depuis PowerShell :
-   ```
+
+   ```bash
    wsl --terminate ArchLinux
    wsl -d ArchLinux
    ```
+
 5. Connectez-vous avec l’utilisateur créé, et lancez Omarchy avec :
-   ```
+
+   ```shell
    hyprland
    ```
 
