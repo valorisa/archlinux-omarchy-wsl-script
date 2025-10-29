@@ -83,7 +83,7 @@ Vous devez exécuter un script bash qui :
 
 ## Auteur et Licence
 
-- Script et documentation par [Valorisa].
+- Script et documentation par valorisa.
 - À usage personnel ou éducatif.
 - Licence MIT.
 
